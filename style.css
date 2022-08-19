@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #484848;
+}
+
+.location::after {
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+  border-right: 0.3em solid transparent;
+  border-top: 0.3em solid;
+  content: "";
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+}
+
+.arrow > div {
+  margin-left: 6px;
+  padding: 3px;
+  border: solid #ad9970;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  transition: all 0.3s ease;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.custom-container {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+}
+
+@media screen and (min-width: 576px) {
+  .custom-container {
+    max-width: 540px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .custom-container {
+    max-width: 720px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .custom-container {
+    max-width: 960px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .custom-container {
+    max-width: 1140px;
+  }
+}
